@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio 2026</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+
+<header>
+  <h3>Mi Portafolio</h3>
+  <nav>
+    <a href="#about">Sobre mí</a>
+    <a href="#projects">Proyectos</a>
+    <a href="#skills">Habilidades</a>
+    <a href="#contact">Contacto</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Hola, soy Itzel.<br>Diseñadora / Ilustradora</h1>
+  <p>Portafolio 2026</p>
+</section>
+
+<section id="about" class="about">
+  <h2>Sobre mí</h2>
+  <br>
+  <p>
+    Mi nombre es Itzel. Soy diseñadora gráfica enfocada en la creación de ilustraciones y posters con un estilo de grunge surreal, post-internet y horror analógico.
+    <br><br>
+    Me interesa lo fuera de lo normal, experimentar algo más atrevido, incluso incómodo y menos normalizado en la actualidad.
+    <br><br>
+    Estudié la carrera de Diseño Gráfico en la Universidad Vizcaya de las Américas.
+    <br><br>
+    Cuento con experiencia trabajando en eventos de música de una escuela preparatoria y con negocios pequeños locales.
+  </p>
+  <br><br>
+</section>
+
+<section id="projects" class="projects">
+  <h2>Proyectos</h2>
+
+  <div class="project">
+    <img src="img/illusuno.jpg" alt="">
+    <div class="info">
+      <div class="number">01</div>
+      <h3>Ilustraciones</h3>
+      <p>Exploración visual con enfoque surreal y experimental.</p>
+      <button onclick="toggleGallery('g1')">Ver proyecto</button>
+    </div>
+  </div>
+
+  <div id="g1" class="extra-gallery">
+    <img src="img/lustraciondos.jpg">
+    <img src="img/lestres.jpg">
+    <img src="img/illuuu.jpg">
+  </div>
+
+
+  <div class="project">
+    <img src="img/py1.jpg" alt="">
+    <div class="info">
+      <div class="number">02</div>
+      <h3>Posters</h3>
+      <p>Diseño gráfico enfocado en música y estética alternativa.</p>
+      <button onclick="toggleGallery('g2')">Ver proyecto</button>
+    </div>
+  </div>
+
+  <div id="g2" class="extra-gallery">
+    <img src="img/POSTER.jpg">
+    <img src="img/pweb1.jpg">
+    <img src="img/HEADLOCK-CARTEL.jpg">
+  </div>
+
+</section>
+
+<section id="skills" class="skills">
+  <h2>Habilidades</h2>
+
+  <p>Photoshop  <span class="stars">★★★★☆</span></p>
+  <p>Ilustrador  <span class="stars">★★★★☆</span></p>
+  <p>Lightroom  <span class="stars">★★★★☆</span></p>
+  <p>Indesing  <span class="stars">★★★☆☆</span></p>
+  <p>Premiere Pro  <span class="stars">★★★☆☆</span></p>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contacto</h2>
+  <br>
+  <p><strong>Tel:</strong> 878 119 1228</p>
+  <br>
+  <p><strong>Instagram:</strong> prod.doo</p>
+  <br>
+  <p><strong>Correo:</strong> lindaitzelgh@gmail.com</p>
+  <br>
+  <p><strong>Behance:</strong> www.behance.net/itzelgonzalez29</p>
+</section>
+
+<section id="email" class="email">
+  <h3 class="subtitulo">Contactanos ahora</h3>
+
+  <form id="form-contact" class="formulario">
+    
+    <div class="campo">
+      <input type="text" id="from_name" name="from_name" required>
+      <label for="from_name">Nombre</label>
+    </div>
+
+    <div class="campo">
+      <input type="email" id="reply_to" name="reply_to" required>
+      <label for="reply_to">Correo electrónico</label>
+    </div>
+
+    <div class="campo">
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <label for="message">Mensaje</label>
+    </div>
+
+    <button type="submit">Enviar</button>
+
+  </form>
+
+  <script src="emailjs.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</section>
+
+<footer>
+  <p>© 2026 Portfolio</p>
+</footer>
+
+<div id="lightbox" class="lightbox">
+  <span class="close" onclick="closeLightbox()">&times;</span>
+  <img id="lightbox-img">
+</div>
+
+<script>
+function toggleGallery(id) {
+  const el = document.getElementById(id);
+  el.classList.toggle('show');
+}
+</script>
+
+<script src="js/script.js"></script>
+</body>
+</html>
+
+
+
