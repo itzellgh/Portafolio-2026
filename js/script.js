@@ -27,8 +27,8 @@ lightbox.addEventListener("click", (e) => {
 const serviceID = 'service_5lwfcg8';
 const templateID = 'template_zdwrqjr';
 const userID = 'T5dpphxYzcgF6kUGr';
-emailjs.init('service_5lwfcg8');
 
+emailjs.init(userID);
 
 document.getElementById('form-contact').addEventListener('submit', function(event) {
     event.preventDefault();
